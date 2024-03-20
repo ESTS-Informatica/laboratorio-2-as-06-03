@@ -119,7 +119,7 @@ public class Company {
             return false;
         }
         sells.add(sell);
-        return true;       // dummy implementation
+        return true;      
     }
 
     /**
@@ -131,7 +131,11 @@ public class Company {
      * @return true If the request succeeds, false otherwise.
      */
     public boolean createSell(User client, User seller, Property property) {
-        return true;         // dummy implementation
+        if((client == null && seller == null && property == null) || !clients.contains(client) && !sellers.contains(seller) && !properties.contains(property)){
+            return false;
+        }
+        
+        return registerSell(new Sell(client, seller, property));
     }
 
     /**

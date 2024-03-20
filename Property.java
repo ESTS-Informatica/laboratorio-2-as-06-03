@@ -9,7 +9,7 @@
 public class Property {
 
     private static int numberOfProperties = 0;
-    private final String id;
+    private final int id;
     private String description;
     private double price;
 
@@ -22,14 +22,14 @@ public class Property {
     public Property(String description, double price) {
         this.description = description;
         this.price = price;
-        id = "0";
+        this.id = ++numberOfProperties;
     }
 
     /**
      * Id selector.
      */
     public int getId() {
-        return Integer.parseInt(id);
+        return id;
     }
 
     /**

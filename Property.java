@@ -72,6 +72,6 @@ public class Property {
 
     @Override
     public String toString() {
-        return null;
+        return "descrição: " + description + "/n" + "Preço: " + price + "Euros";
     }
 }

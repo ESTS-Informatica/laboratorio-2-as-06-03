@@ -74,7 +74,7 @@ public class CompanyTest
        client2 = new User("António Francisco", "922222222", "tochico@hotmail.com");
        seller1 = new User("Fernando Fernandes", "966777101", "fefe@remax.pt");
        seller2 = new User("José Manuel", "966777152", "roro@remax.pt");
-       property1 = new Property"descrição", 2.5);
+
     }
 
     /**

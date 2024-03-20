@@ -37,6 +37,12 @@ public class PropertyTest
         assertEquals("descrição", this.property.getDescription());
         assertEquals(2.5, this.property.getPrice());
     }
+    
+    @Test
+    public void testToString(){
+        this.property = new Property("bla bla bla", 4.5);
+        assertEquals( "descrição: " + "bla bla bla" + "/n" + "Preço: " + 4.5 + "Euros", this.property.toString());
+    }
 
     /**
      * Desfaz a 'fixture' do teste.
